@@ -1,0 +1,23 @@
+@SuppressWarnings("serial")
+
+public class UnmatchedException extends Exception {
+
+/*Default constructor */
+
+public UnmatchedException()
+
+{
+
+}
+
+/*Parameterized constructor with type of string */
+
+public UnmatchedException(String sentence)
+
+{
+
+super(sentence);
+
+}
+
+}
