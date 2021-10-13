@@ -1,0 +1,30 @@
+class Hashing
+{
+        public static void main(String args[])
+        {
+                int key[]=new int[]{27,53,13,10,138,109,49,174,26,24}; //key values
+                int a[]=new int[13];      //hash table size
+                int N=a.length;          //calculate size of hash table
+                for(int i=0;i<key.length;i++) //iterate each key value from key array 
+                {
+                        int ip=key%N;
+                        int q=key/N;
+                        int offset;
+                        if(q%N!=0)
+                        {
+                                offset=q;
+                        }
+                        else
+                        {
+                                offset=4k+3; //prime
+                        }
+                        while(a[ip]!=0)     //checking whether collision occurs or not
+                        {
+                                ip=(ip+offset)%N; 
+                        }
+                        a[ip]=key[i];    // store key value to hash table
+                }
+                
+        }
+}
+
